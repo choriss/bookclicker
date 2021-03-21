@@ -11,13 +11,15 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         left_button.setOnClickListener{
-            if (picture_id == 1){
+            picture_id -= 1
+            if (picture_id == 0){
                 picture_id = 2
             }
         }
 
         right_button.setOnClickListener{
-            if (picture_id == 1){
+            picture_id += 1
+            if (picture_id == 3){
                 picture_id = 2
             }
         }
